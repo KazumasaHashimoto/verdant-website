@@ -22,18 +22,131 @@
 @keyframes identity-ring{from{stroke-dashoffset:334}to{stroke-dashoffset:0}}
 @keyframes identity-rise{from{transform:scaleY(0);opacity:0}to{transform:scaleY(1);opacity:1}}
 @keyframes identity-unfurl{from{transform:scale(.12) rotate(-12deg);opacity:0}to{transform:scale(1) rotate(0);opacity:1}}
+
+.links{flex-wrap:wrap;row-gap:10px}.notice-card{min-width:0;overflow-wrap:anywhere}.notice-card>time{display:block;margin-bottom:18px}.notice-card h3{font-size:30px}.notice-body h4{font:600 15px/1.5 system-ui,sans-serif;color:var(--ink);margin:24px 0 8px}.notice-body p{white-space:pre-wrap}.notice-body ul{margin:8px 0 22px}.notice-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:24px}#notice-retry{font:inherit;background:transparent;color:var(--ink);cursor:pointer}#notice-retry:hover{background:var(--ink);color:var(--bg)}#notice-retry[hidden]{display:none}#notice-retry:disabled{opacity:.55;cursor:wait}.notice-list:empty{margin-top:0}
 </style>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PGNpcmNsZSBjeD0iNjQiIGN5PSI2NCIgcj0iNTMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2E5ZGI4YSIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZD0iTTY0IDEwNVY1OSIgc3Ryb2tlPSIjYTlkYjhhIiBzdHJva2Utd2lkdGg9IjUiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik02MyA3OUMzOSA4MCAyOCA2MiAyOSA0NWMyMi0xIDM1IDExIDM0IDM0WiIgZmlsbD0iIzg5Yzg3NSIvPjxwYXRoIGQ9Ik02NSA2OUM2NSA0OCA3OCAzOCA5OSAzNmMyIDIxLTExIDMzLTM0IDMzWiIgZmlsbD0iI2E1ZDk4YSIvPjwvc3ZnPg==">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header><nav class="wrap" aria-label="Main navigation"><a class="brand" href="#" aria-label="Verdant home"><svg xmlns="http://www.w3.org/2000/svg" class="brand-sprout" width="52" height="52" aria-hidden="true" focusable="false" viewBox="0 0 128 128"><circle class="identity-ring" cx="64" cy="64" r="53" fill="none" stroke="#a9db8a" stroke-width="5"/><path class="identity-stem" d="M64 105V59" stroke="#a9db8a" stroke-width="5" fill="none" stroke-linecap="round"/><path class="identity-leaf identity-left" d="M63 79C39 80 28 62 29 45c22-1 35 11 34 34Z" fill="#89c875"/><path class="identity-leaf identity-right" d="M65 69C65 48 78 38 99 36c2 21-11 33-34 33Z" fill="#a5d98a"/></svg><span class="brand-copy"><strong>VERDANT</strong><span>GROW · DISCOVER · HARVEST</span></span></a><div class="links"><a href="#download">Download</a><a href="#updates">Updates</a><a href="#guide">Install guide</a></div></nav></header>
+<header><nav class="wrap" aria-label="Main navigation"><a class="brand" href="#" aria-label="Verdant home"><svg xmlns="http://www.w3.org/2000/svg" class="brand-sprout" width="52" height="52" aria-hidden="true" focusable="false" viewBox="0 0 128 128"><circle class="identity-ring" cx="64" cy="64" r="53" fill="none" stroke="#a9db8a" stroke-width="5"/><path class="identity-stem" d="M64 105V59" stroke="#a9db8a" stroke-width="5" fill="none" stroke-linecap="round"/><path class="identity-leaf identity-left" d="M63 79C39 80 28 62 29 45c22-1 35 11 34 34Z" fill="#89c875"/><path class="identity-leaf identity-right" d="M65 69C65 48 78 38 99 36c2 21-11 33-34 33Z" fill="#a5d98a"/></svg><span class="brand-copy"><strong>VERDANT</strong><span>GROW · DISCOVER · HARVEST</span></span></a><div class="links"><a href="#download">Download</a><a href="#updates">Updates</a><a href="#notices">Tester notices</a><a href="#guide">Install guide</a></div></nav></header>
 <main id="main">
 <section class="hero"><div class="wrap hero-grid"><div><p class="eyebrow">An Android grow-tent simulation</p><h1>The art<br>of <em>growing.</em></h1><p class="intro">Step inside Verdant. A landscape simulation taking shape, one update at a time. Explore the current build and help its next chapter grow.</p><div class="actions"><a class="button primary" href="https://github.com/KazumasaHashimoto/verdant-releases/releases/download/v1.2.35/Verdant.apk">Download Android APK <span aria-hidden="true">&nbsp;↓</span></a><a class="text-link" href="#guide">Installation guide</a></div><p class="fine">Development build · v1.2.35 · Android</p></div>
 <svg class="botanical" viewBox="0 0 420 440" role="img" aria-label="Decorative botanical sprout illustration"><defs><radialGradient id="halo"><stop stop-color="#789154" stop-opacity=".17"/><stop offset="1" stop-color="#789154" stop-opacity="0"/></radialGradient></defs><circle cx="210" cy="220" r="205" fill="url(#halo)"/><g fill="none" stroke="currentColor"><circle cx="210" cy="220" r="174" opacity=".18"/><circle cx="210" cy="220" r="145" opacity=".08"/><path class="stem" d="M210 355 C206 296 221 250 210 194 C203 165 203 138 215 109" stroke-width="2"/><g class="leaf" stroke-width="1.5"><path d="M211 230 C147 228 101 179 109 124 C168 127 216 166 211 230Z" fill="#234330"/><path d="M211 230 Q171 175 109 124"/><path d="M213 187 C214 129 254 87 312 94 C310 151 267 190 213 187Z" fill="#2b4a31"/><path d="M213 187 Q250 131 312 94"/><path d="M211 297 C166 298 140 268 143 233 C181 234 213 259 211 297Z" fill="#1a3425"/><path d="M211 297 Q184 259 143 233"/></g><path d="M173 356 H248" opacity=".6"/></g><text x="210" y="406" text-anchor="middle" fill="currentColor" font-family="Georgia,serif" font-size="11" letter-spacing="5" opacity=".7">ROOTED IN POSSIBILITY</text></svg>
 </div></section>
 <section class="section" id="download"><div class="wrap"><p class="eyebrow">The testing room</p><h2>Your next session starts here.</h2><p class="section-intro">Download the Android APK directly from the official Verdant release. This is an early development build, with unfinished features and room to grow.</p><div class="cards"><article class="card"><span class="badge">ANDROID · TESTING BUILD</span><h3>Verdant v1.2.35</h3><p>Includes the animated Verdant startup logo and physical device rotation detection.</p><a class="button primary" href="https://github.com/KazumasaHashimoto/verdant-releases/releases/download/v1.2.35/Verdant.apk">Download APK · v1.2.35 ↓</a><p class="fine" style="margin:16px 0 0">Verdant.apk · 28.60 MB · Android testing build</p><p style="margin:12px 0 0"><a class="text-link" href="https://github.com/KazumasaHashimoto/verdant-releases/releases/tag/v1.2.35">Release notes &amp; alternative download ↗</a></p></article><article class="card"><span class="badge">BUILT TOGETHER</span><h3>Help Verdant grow.</h3><p>Found something unexpected? Share the build version, your phone model, what happened and the steps that triggered it. A screenshot or short recording helps too.</p><p>For now, send feedback through your usual contact with the developer.</p><a class="text-link" href="#guide">Read the installation guide</a></article></div></div></section>
+<section class="section" id="notices" aria-labelledby="notice-heading"><div class="wrap"><p class="eyebrow">From the developer</p><h2 id="notice-heading">Tester noticeboard.</h2><p class="section-intro">Upcoming changes, known issues and things to look out for in your next session.</p><p id="notice-status" class="fine" role="status">Checking for tester notices…</p><div id="notice-list" class="cards notice-list" aria-busy="true"></div><noscript><p>Turn on JavaScript to see notices here, or read them on GitHub below.</p></noscript><div class="notice-actions"><button id="notice-retry" class="button" type="button" hidden>Try again</button><a class="text-link" href="https://github.com/KazumasaHashimoto/verdant-website/issues?q=is%3Aissue%20is%3Aopen%20author%3AKazumasaHashimoto%20%22%5BNotice%5D%22%20in%3Atitle">Read tester notices on GitHub ↗</a></div></div></section>
 <section class="section" id="updates"><div class="wrap"><p class="eyebrow">Development journal</p><h2>A growing world.</h2><div class="cards"><article class="card"><p class="eyebrow">v1.2.35 · Current featured build</p><h3>A new beginning.</h3><ul><li>Animated Verdant startup logo.</li><li>Physical device rotation detection.</li><li>Landscape Android experience.</li></ul><a class="text-link" href="https://github.com/KazumasaHashimoto/verdant-releases/releases">Browse all published releases ↗</a></article><article class="card"><p class="eyebrow">On the website horizon</p><h3>More to discover.</h3><p>Game screenshots, a genetics showcase and deeper development updates are planned for future website editions.</p><p class="fine">These sections will arrive as their content is ready.</p></article></div></div></section>
 <section class="section" id="guide"><div class="wrap"><p class="eyebrow">Installation & support</p><h2>Settle in.</h2><details open><summary>How do I install Verdant?</summary><ol><li>Tap <strong>Download Android APK</strong> or <strong>Download APK</strong> above.</li><li>If Chrome displays “File might be harmful”, check that the filename is <strong>Verdant.apk</strong> and that you started the download from this official site. This generic file-type warning is different from a Play Protect malware alert.</li><li>Open the downloaded APK. If Android requests it, allow that browser or file manager to install unknown apps.</li><li>Complete installation, open Verdant and hold your phone in landscape.</li></ol><p>Permission names vary between phones. You can switch the install permission off again afterwards.</p></details><details><summary>How do I install a future update?</summary><p>Download the newer APK and install it over the existing app. Updates need the same Android package identifier and signing key, with an appropriate version code. Avoid uninstalling first, as uninstalling can remove local saves. If Android rejects an update, contact the developer before removing the existing game.</p></details><details><summary>Android shows a warning. What should I do?</summary><p>A permission prompt for installing from your browser can appear for APKs downloaded outside an app store. If Play Protect flags the file as harmful, stop and send the warning to the developer for investigation.</p></details><details><summary>Can I play in my browser or on iPhone?</summary><p>This download is an Android APK. A browser-playable edition and an iPhone release are not provided here.</p></details></div></section>
-</main><footer class="wrap footer"><span>VERDANT · Official development website</span><span>Website v0.3 · Made for growth.</span></footer>
+</main><footer class="wrap footer"><span>VERDANT · Official development website</span><span>Website v0.4 · Made for growth.</span></footer>
+<script>
+(() => {
+  'use strict';
+  const owner = 'KazumasaHashimoto';
+  const repo = 'verdant-website';
+  const prefix = '[Notice]';
+  const cacheKey = 'verdant-notices-v1';
+  const status = document.getElementById('notice-status');
+  const list = document.getElementById('notice-list');
+  const retry = document.getElementById('notice-retry');
+  if (!status || !list || !retry) return;
+  function selectNotices(data) {
+    if (!Array.isArray(data)) throw new Error('Invalid notice feed');
+    return data.filter(post => post && !post.pull_request && post.state === 'open' &&
+      post.user?.login === owner && typeof post.title === 'string' &&
+      post.title.startsWith(prefix) && Number.isSafeInteger(post.number) && post.number > 0 &&
+      Number.isFinite(Date.parse(post.created_at)))
+      .sort((a, b) => Date.parse(b.created_at) - Date.parse(a.created_at)).slice(0, 6);
+  }
+  function el(tag, text, className) {
+    const node = document.createElement(tag);
+    if (text !== undefined) node.textContent = text;
+    if (className) node.className = className;
+    return node;
+  }
+  // Render a small text-only Markdown subset. Never inject remote HTML.
+  function bodyNodes(text) {
+    const container = el('div', undefined, 'notice-body');
+    let paragraph = [], ul = null;
+    function flush() {
+      if (paragraph.length) container.append(el('p', paragraph.join(' ')));
+      paragraph = []; ul = null;
+    }
+    for (const line of String(text || '').slice(0, 16000).split(/\r?\n/)) {
+      if (!line.trim()) { flush(); continue; }
+      const heading = line.match(/^#{1,6}\s+(.+)$/);
+      const bullet = line.match(/^\s*[-*]\s+(.+)$/);
+      if (heading) { flush(); container.append(el('h4', heading[1])); }
+      else if (bullet) {
+        if (paragraph.length) flush();
+        if (!ul) { ul = el('ul'); container.append(ul); }
+        ul.append(el('li', bullet[1]));
+      } else { ul = null; paragraph.push(line); }
+    }
+    flush();
+    return container;
+  }
+  function render(posts, cached = false) {
+    list.replaceChildren();
+    if (!posts.length) {
+      status.textContent = 'No tester notices have been posted yet. Check back here for upcoming changes and things to try.';
+      return;
+    }
+    status.textContent = cached
+      ? 'Showing previously loaded notices. Live updates are temporarily unavailable.'
+      : 'Latest developer notices. Visit or refresh this page to check for updates.';
+    for (const post of posts) {
+      const card = el('article', undefined, 'card notice-card');
+      const date = new Date(post.created_at);
+      const time = el('time', new Intl.DateTimeFormat('en-GB', {dateStyle:'medium'}).format(date), 'eyebrow');
+      time.dateTime = date.toISOString();
+      card.append(time, el('h3', post.title.slice(prefix.length).trim() || 'Tester notice'));
+      card.append(bodyNodes(post.body));
+      const link = el('a', 'View notice on GitHub ↗', 'text-link');
+      link.href = `https://github.com/${owner}/${repo}/issues/${post.number}`;
+      card.append(link);
+      list.append(card);
+    }
+  }
+  let loading = false;
+  async function load() {
+    if (loading) return;
+    loading = true;
+    retry.disabled = true;
+    retry.hidden = true;
+    list.setAttribute('aria-busy', 'true');
+    status.textContent = 'Checking for tester notices…';
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    try {
+      const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/issues?state=open&creator=${owner}&sort=created&direction=desc&per_page=100`, {
+        headers: {Accept:'application/vnd.github+json'}, credentials:'omit', signal:controller.signal
+      });
+      if (!response.ok) throw new Error('Notice feed unavailable');
+      const posts = selectNotices(await response.json());
+      render(posts);
+      try { localStorage.setItem(cacheKey, JSON.stringify({saved:Date.now(), posts})); } catch {}
+    } catch {
+      let cached = null;
+      try {
+        const value = JSON.parse(localStorage.getItem(cacheKey));
+        if (value && Number.isFinite(value.saved) && Date.now() - value.saved >= 0 &&
+            Date.now() - value.saved < 86400000) cached = selectNotices(value.posts);
+      } catch {}
+      if (cached && cached.length) render(cached, true);
+      else {
+        list.replaceChildren();
+        status.textContent = 'Tester notices are temporarily unavailable. You can still read them using the GitHub link below.';
+      }
+      retry.hidden = false;
+    } finally {
+      clearTimeout(timeout); loading = false; retry.disabled = false;
+      list.setAttribute('aria-busy', 'false');
+    }
+  }
+  retry.addEventListener('click', load);
+  load();
+})();
+
+</script>
 </body></html>
